@@ -1,0 +1,95 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Dark theme */
+  body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Header styles */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .logo {
+    color: #ff00ff; /* Pink color */
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  
+  /* Hamburger menu styles */
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    max-width: 768px;
+    padding: 20px 0;
+    
+  }
+
+  .menu li {
+    padding: 0 0px;
+  }
+
+  .menu li a {
+    
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+    
+  }
+
+  .menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .menu li a.selected {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .logo {
+      order: 2;
+    }
+
+    .menu {
+      order: 3;
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .menu li {
+      padding: 10px 0;
+    }
+
+    .menu.show {
+      display: flex;
+    }
+
+    .menu-icon {
+      order: 4;
+      display: block;
+    }
+  }

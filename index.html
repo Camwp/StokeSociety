@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/basic.css">
+    <title>StokeSociety</title>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" href="#" alt="StokeSociety Logo">
+    <!--<a class="logo" href="#">StokeSociety</a>-->
+    <ul class="menu">
+      <li><a href="#" class="selected">Home</a></li>
+      <li><a href="#">YouTube</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">About</a></li>
+      <!--<li><a href="#">Showroom</a></li>-->
+    </ul>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+
+  <h1>StokeSociety Content</h1>
+
+  <!-- Content goes here -->
+  
+    
+  <script>
+    // Toggle the menu for smaller screens
+    const menuIcon = document.querySelector('.menu-icon');
+    const menu = document.querySelector('.menu');
+
+    menuIcon.addEventListener('click', function () {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
